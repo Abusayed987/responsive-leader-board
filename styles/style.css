@@ -166,8 +166,20 @@ hr{
         grid-template-columns: 1fr;
     }
     .top-blogs {
-        
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-row-gap: 29px; */
+        grid-column-gap: 9px;
+        justify-content: center;   
+    }
+    .top-blogs p{
+        margin: 0;
+    }
+    .top-blogs .top-blog{
+        border-radius: 5px;
+        margin: 10px auto;
+        padding: 5px;
+        box-shadow: 1px 1px 10px rgb(244, 237, 237);
     }
     .container .courses{
         grid-template-columns: 1fr;
